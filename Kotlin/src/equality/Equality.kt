@@ -1,5 +1,7 @@
 package equality
 
+import extentionfunc.isPalindrome
+
 class Equality {
 
 }
@@ -22,7 +24,9 @@ fun main() {
      a = "Hello"
      b = a
      c = "world"
-     d = "world"
+     d = "NAMAN"
+    println(d)
+  println( d.isPalindrome())
 
     println(a === b)
     // true

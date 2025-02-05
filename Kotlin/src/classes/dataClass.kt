@@ -1,5 +1,11 @@
 package classes
 
+
+//The primary constructor must have at least one parameter.
+//All primary constructor parameters must be marked as val or var.
+//Data classes can't be abstract, open, sealed, or inner.
+//Providing explicit implementations for the componentN() and copy() functions  allowed.
+
 data class User(val name: String, val age: Int){
 
 }
