@@ -1,4 +1,4 @@
-package thiskeyword
+package thisKeyword
 
 //To denote the current receiver, you use this expressions:
 //
@@ -9,16 +9,19 @@ package thiskeyword
 //If this has no qualifiers, it refers to the innermost enclosing scope. To refer to this in other scopes, label qualifiers are used:
 //
 
-class thisKeyword {
-}
+class thisKeyword {}
 
 fun main() {
-    fun printLine() { println("Local function") }
+    fun printLine() {
+        println("Local function")
+    }
 
     class A {
-        fun printLine() { println("Member function") }
+        fun printLine() {
+            println("Member function")
+        }
 
-        fun invokePrintLine(omitThis: Boolean = false)  {
+        fun invokePrintLine(omitThis: Boolean = false) {
             if (omitThis) printLine()
             else this.printLine()
         }

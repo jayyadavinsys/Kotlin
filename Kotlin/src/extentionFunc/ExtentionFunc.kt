@@ -1,4 +1,4 @@
-package extentionfunc
+package extentionFunc
 
 fun main(){
 var cr=Cricle()

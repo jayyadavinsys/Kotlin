@@ -1,6 +1,6 @@
 package equality
 
-import extentionfunc.isPalindrome
+import extentionFunc.isPalindrome
 
 class Equality {
 

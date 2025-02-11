@@ -1,7 +1,6 @@
-package scopefunctions
+package scopeFunctions
 
-class ScopeFunctions {
-}
+class ScopeFunctions {}
 
 class MultiportService(var url: String, var port: Int) {
     fun prepareRequest(): String = "Default request"
@@ -9,12 +8,16 @@ class MultiportService(var url: String, var port: Int) {
 }
 
 data class Person(var name: String, var age: Int, var city: String) {
-    fun moveTo(newCity: String) { city = newCity }
-    fun incrementAge() { age++ }
+    fun moveTo(newCity: String) {
+        city = newCity
+    }
+
+    fun incrementAge() {
+        age++
+    }
 }
 
 data class Persons(var name: String, var age: Int = 0, var city: String = "")
-
 
 
 fun main() {
@@ -34,7 +37,6 @@ fun main() {
         println(it)
         // and more function calls if needed
     }
-
 
 
     val numbers = listOf("one", "two", "three", "four")
@@ -75,7 +77,5 @@ fun main() {
     //also
 
     var no = mutableListOf("one", "two", "three")
-    no
-        .also { println("The list elements before adding new one: $it") }
-        .add("four")
+    no.also { println("The list elements before adding new one: $it") }.add("four")
 }

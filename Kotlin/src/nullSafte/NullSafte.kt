@@ -1,6 +1,4 @@
-package nullsafte
-
-import org.w3c.dom.Node
+package nullSafte
 
 
 class NullSafte {

@@ -1,6 +1,4 @@
-package highorderfun
-
-import java.awt.Image
+package highOrderFun
 
 fun main(){
     var sq=::seq
