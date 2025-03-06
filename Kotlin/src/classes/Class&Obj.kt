@@ -18,6 +18,13 @@ class ClassandObj {
     }
 }
 class Employee(var name:String, var age:Int, var job:String){
+    lateinit var a:String
+
+    init {
+        a = "Krishan"
+
+        a = "Jay"
+    }
 
 }
 fun main(){
